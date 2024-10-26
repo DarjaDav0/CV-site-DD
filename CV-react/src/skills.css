@@ -27,7 +27,6 @@
     padding: 10px;
     border-radius: 10px;
     background-color: #f9f9f9;
-    
 }
 
 .skills-category h3 {
@@ -41,13 +40,19 @@
     justify-content: flex-start;
     align-items: center;
     margin-bottom: 10px;
-    flex-wrap: wrap; 
+    flex-wrap: wrap;
 }
 
 .skill dt { /*Skill name*/
     flex: 1;
     text-align: left;
+    font-weight: normal;
+    transition: font-weight 0.3s;
     margin-left: 70px;
+}
+
+.skill dt.bold { /* For on hover effect */
+    font-weight: bold;
 }
 
 .skill dd { /*Skill level */
@@ -57,20 +62,19 @@
     margin-left: 30px;
 }
 
-.skill i { /*Representation of every star */
+.skill .fa-star { /* Star icon */
     font-style: normal;
     cursor: pointer;
     margin-left: 5px;
     color: #ccc;
 }
 
-.skill i.filled {
-    color: #8A51A0;
+.skill .fa-star.filled  { /*Regular filled star */
+    color: #6D3085;
 }
 
-.skill i:hover,
-.skill i:hover ~ i {
-    color: #6D3085;
+.skill:hover .fa-star.filled { /*On hover effect */
+    color: gold;
 }
 
 @media (max-width: 600px) {

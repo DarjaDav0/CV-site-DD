@@ -1,21 +1,21 @@
 import React, { useState } from 'react';
 import './skills.css';
 
-const Skill = ({ name, rating }) => {
-    const [hoverRating, setHoverRating] = useState(0);
-
+const Skill = ({ name, rating, hoverSkill, setHoverSkill }) => {
     return (
-        <dl className="skill">
-            <dt>{name}</dt>
+        <dl
+            className="skill"
+            onMouseEnter={() => setHoverSkill(name)}
+            onMouseLeave={() => setHoverSkill(null)}
+        >
+            <dt className={hoverSkill === name ? 'bold' : ''}>{name}</dt>
             <dd>
                 {[1, 2, 3, 4, 5].map((star) => (
                     <i
                         key={star}
-                        className={`fa fa-star ${star <= (hoverRating || rating) ? 'filled' : ''}`}
-                        onMouseEnter={() => setHoverRating(star)}
-                        onMouseLeave={() => setHoverRating(0)}
+                        className={`fa fa-star ${star <= rating ? 'filled' : ''} ${hoverSkill === name ? 'hovered' : ''}`}
                     >
-                        {star <= (hoverRating || rating) ? '\u2605' : '\u2606'}
+                        {star <= rating ? '\u2605' : '\u2606'}
                     </i>
                 ))}
             </dd>
@@ -24,6 +24,8 @@ const Skill = ({ name, rating }) => {
 };
 
 const Skills = () => {
+    const [hoverSkill, setHoverSkill] = useState(null);
+
     const skillsData = {
         Coding: [
             { name: 'Python', rating: 5 },
@@ -61,7 +63,7 @@ const Skills = () => {
                 <div key={category} className="skills-category">
                     <h3>{category}</h3>
                     {skillsData[category].map((skill) => (
-                        <Skill key={skill.name} name={skill.name} rating={skill.rating} />
+                        <Skill key={skill.name} name={skill.name} rating={skill.rating} hoverSkill={hoverSkill} setHoverSkill={setHoverSkill}/>
                     ))}
                 </div>
             ))}

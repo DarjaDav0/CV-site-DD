@@ -1,6 +1,7 @@
 import React from 'react';
 import './Aboutsection.css';
-import profile from './profile.jpg';
+import profile from '/profile.jpg';
+
 function Aboutsection() {
     return (
         <div className="Aboutsection">

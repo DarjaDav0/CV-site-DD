@@ -3,6 +3,7 @@ import './App.css';
 import Aboutsection from './Aboutsection';
 import Skills from './skills.jsx';
 import './skills.css';
+import Projects from './projects.jsx';
 
 //Intro section is here
 
@@ -77,9 +78,8 @@ function App() {
     <div className="App text-center">
 			<section id="intro">
       <div className="App-header">
-          
         <h1>Darja Davydova</h1>
-          <a>Welcome to my web CV</a>
+          <a>Welcome to my web CV <br/> Made with Vite and React :) </a>
           <ul className="inline-list">
             <li>
               <a 
@@ -100,7 +100,7 @@ function App() {
           <li><a href="#intro" onClick={() => handleScrollToSection('intro')}>Intro</a></li>
           <li><a href="#about" onClick={() => handleScrollToSection('about')}>About</a></li>
           <li><a href="#skills" onClick={() => handleScrollToSection('skills')}>Skills</a></li>
-          
+          <li><a href="#projects" onClick={() => handleScrollToSection('projects')}>Projects</a></li>
         </ul>
       </nav>
       <section id="about">
@@ -109,7 +109,9 @@ function App() {
       <section id="skills">
         <Skills/>
       </section>
-      
+      <section id="projects">
+        <Projects/>
+      </section>
     </div>
   );
 }

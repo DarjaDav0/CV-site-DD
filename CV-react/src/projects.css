@@ -1,0 +1,59 @@
+.projects-container {
+  padding: 20px;
+  background-color: #ffebbb;
+}
+
+.projects-container h1 {
+  font: 'Dosis', sans-serif;
+  color: #5f2277;
+  font-size: 40px;
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.project-item {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.project-image {
+  max-width: 200px;
+  max-height: auto;
+  margin-left: 20%;
+}
+
+.vuforia-image {
+  max-width: 300px;
+  height: 170px;
+  margin-left: 20%;
+}
+
+.project-details {
+  flex: 1;
+}
+
+.project-details h2 {
+  font: 'Dosis', sans-serif;
+  color: #5f2277;
+  font-size: 30px;
+  text-align: left;
+  margin-left: 10%;
+}
+
+.project-details p {
+  font: 'Dosis', sans-serif;
+  color: #5f2277;
+  font-size: 20px;
+  text-align: left;
+  margin-left: 10%;
+}
+
+.project-details a {
+  color: #007bff;
+  text-decoration: none;
+}
+
+.project-details a:hover {
+  text-decoration: underline;
+}
