@@ -11,7 +11,7 @@ const Projects = () => {
                     <h2>Easy Energy</h2>
                     <p>This was a large team project. The team consisted of <br/>
                         three people in addition to myself. The application <br/>
-                        was built in Kotlin. The goal was to retrieve hourly <br/> 
+                        was developed Kotlin. The goal was to retrieve hourly <br/> 
                         electricity prices through an API from a web address, <br/>
                         store them in our own database, and display them <br/>
                         in a mobile app. I collected and processed the data <br/>

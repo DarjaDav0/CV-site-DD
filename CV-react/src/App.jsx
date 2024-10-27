@@ -5,8 +5,6 @@ import Skills from './skills.jsx';
 import './skills.css';
 import Projects from './projects.jsx';
 
-//Intro section is here
-
 function copyToClipboard(text) {
   navigator.clipboard.writeText(text).then(() => {
     console.log('Copied to clipboard:', text);

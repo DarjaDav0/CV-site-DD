@@ -28,11 +28,11 @@ const Skills = () => {
 
     const skillsData = {
         Coding: [
-            { name: 'Python', rating: 5 },
+            { name: 'Python', rating: 4 },
             { name: 'JavaScript', rating: 4 },
-            { name: 'React', rating: 4 },
+            { name: 'ReactJS', rating: 4 },
             { name: 'CSS', rating: 4 },
-            { name: 'HTML', rating: 4 },
+            { name: 'HTML', rating: 3 },
             { name: 'C#', rating: 3 },
             { name: 'SQL', rating: 4 },
             { name: 'Kotlin', rating: 3 },
@@ -42,10 +42,12 @@ const Skills = () => {
             { name: 'Insomnia', rating: 3 },
             { name: 'Scrum / Agile', rating: 4 },
             { name: 'MongoDB', rating: 4 },
-            { name: 'InfluxDB', rating: 3 },
+            { name: 'InfluxDB', rating: 5 },
+            { name: 'Supabase', rating: 3 },
             { name: 'MySQL Workbench', rating: 4 },
-            { name: 'Android Studio', rating: 3 },
+            { name: 'Android Studio', rating: 4 },
             { name: 'Unity', rating: 2 },
+            { name: 'Wordpress', rating: 3 },
         ],
         Languages: [
             { name: 'Finnish', rating: 5 },
