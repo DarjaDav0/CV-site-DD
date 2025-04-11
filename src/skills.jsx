@@ -40,7 +40,7 @@ const Skills = () => {
         Tools: [
             { name: 'GitHub / Gitlab', rating: 4 },
             { name: 'Insomnia', rating: 3 },
-            { name: 'Scrum / Agile', rating: 4 },
+            { name: 'Scrum / Agile', rating: 3 },
             { name: 'MongoDB', rating: 4 },
             { name: 'InfluxDB', rating: 5 },
             { name: 'Supabase', rating: 3 },
@@ -53,7 +53,6 @@ const Skills = () => {
             { name: 'Finnish', rating: 5 },
             { name: 'Russian', rating: 5 },
             { name: 'English', rating: 4 },
-            { name: 'Swedish', rating: 1 },
         ],
     };
 
