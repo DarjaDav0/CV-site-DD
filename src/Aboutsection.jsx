@@ -17,10 +17,10 @@ function Aboutsection() {
                 <div className="Aboutsection-text">
                     <p>
                         Hi! I am Darja Davydova, Fourth-year Information Technology <br/>
-                        student at Lapland UAS. I'm passionate about web <br/>
-                        development and learning new things. I’m focused on <br/>
+                        student at Lapland UAS. I'm passionate about learning new things <br/>
+                        and interested in web development. I’m focused on <br/>
                         creating user-friendly, efficient web solutions. <br/>
-                        In my free time, I enjoy tasting different kinds of tea <br/>
+                        In my free time I enjoy bicycling, tasting different kinds of tea <br/>
                         and baking sweet pastries.
                     </p>
                 </div>
