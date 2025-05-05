@@ -77,7 +77,7 @@ function App() {
 			<section id="intro">
       <div className="App-header">
         <h1>Darja Davydova</h1>
-          <a>Welcome to my web CV <br/> Made with Vite and React :) </a>
+          <a>Welcome to my web CV <br/> Made with Vite and React.js :) <br/> Updating with gh-pages </a>
           <ul className="inline-list">
             <li>
               <a 
